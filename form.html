@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning project</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="Bootstrap/css/bootstrap.css">
+
+
+</head>
+
+<body style="background-color: rgb(23, 43, 43); color: antiquewhite;">
+
+    <header>
+        <div class="collapse" id="hiddenNav">
+            <div class="bg-gradient bg-dark justify-content-evenly d-sm-flex text-center">
+                <li class="nav-item list-unstyled h3">
+                    <a class="nav-link text-light" aria-current="page" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item list-unstyled h3">
+                    <a class="nav-link text-light" aria-current="page" href="images.html">Images</a>
+                </li>
+
+                <li class="nav-item list-unstyled h3">
+                    <a class="nav-link text-light" aria-current="page" href="text.html">Text</a>
+                </li>
+
+                <li class="nav-item list-unstyled h3">
+                    <a class="nav-link text-light" aria-current="page" id="disabled">form</a>
+                </li>
+            </div>
+
+        </div>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler btn bg-light ms-auto" data-bs-toggle="collapse"
+                    aria-label="a button that expands the navbar" data-bs-target="#hiddenNav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="black" class="bi bi-toggles"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M4.5 9a3.5 3.5 0 1 0 0 7h7a3.5 3.5 0 1 0 0-7zm7 6a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5m-7-14a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5m2.45 0A3.5 3.5 0 0 1 8 3.5 3.5 3.5 0 0 1 6.95 6h4.55a2.5 2.5 0 0 0 0-5zM4.5 0h7a3.5 3.5 0 1 1 0 7h-7a3.5 3.5 0 1 1 0-7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="validationCustom01" class="form-label">First name</label>
+                <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide your firstname
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please provide your surname
+                </div>
+            </div>
+            <div class="col-md-4">
+                <label for="validationCustomUsername" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername"
+                        aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <label for="validationCustom03" class="form-label">City</label>
+                <input type="text" class="form-control" id="validationCustom03" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom04" class="form-label">State</label>
+                <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationCustom05" class="form-label">Zip</label>
+                <input type="text" class="form-control" id="validationCustom05" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+        </form>
+
+    </main>
+
+    <footer class="mt-2 ms-2">
+        <address>
+            Author: Eward van Niekerk <br>
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="red" class="bi bi-c-circle"
+                viewBox="0 0 16 16">
+                <path
+                    d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.146 4.992c-1.212 0-1.927.92-1.927 2.502v1.06c0 1.571.703 2.462 1.927 2.462.979 0 1.641-.586 1.729-1.418h1.295v.093c-.1 1.448-1.354 2.467-3.03 2.467-2.091 0-3.269-1.336-3.269-3.603V7.482c0-2.261 1.201-3.638 3.27-3.638 1.681 0 2.935 1.054 3.029 2.572v.088H9.875c-.088-.879-.768-1.512-1.729-1.512" />
+            </svg> copyright resricted <br>
+            <div id="date"></div>
+        </address>
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="Bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="getYear.js"></script>
+    <script src="form.js"></script>
+
+</body>
+
+
+</html>
